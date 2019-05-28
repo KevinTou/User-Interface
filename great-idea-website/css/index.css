@@ -226,7 +226,6 @@ header img {
 main {
   width: 100%;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
 .section-top {
@@ -243,10 +242,15 @@ main {
   font-family: "Lato";
 }
 
+.section-footer {
+  padding-top: 35px;
+}
+
 footer {
   font-family: "Lato";
   margin-top: 35px;
   margin-bottom: 60px;
+  border-top: 1px solid black;
 }
 
 .phone {
@@ -278,4 +282,25 @@ a:hover {
   100% {
     font-size: 16px;
   }
+}
+
+/* ---------- About page CSS ---------- */
+
+.banner-about-title {
+  font-size: 45px;
+  border-bottom: 3px solid black;
+}
+
+.banner-about-image {
+  width: 500px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.banner-about-image img {
+  width: 100%;
+}
+
+.banner-about-description {
+  line-height: 2em;
 }
