@@ -3,64 +3,304 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+.container {
+  width: 876px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: auto;
+  background-color: white;
+  padding: 35px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header nav a {
+  display: inline-block;
+  color: #bbbbbb;
+  text-decoration: none;
+  margin-right: 55px;
+}
+
+header img {
+  position: relative;
+  right: 0;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+.banner {
+  margin-top: 108px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.banner-content {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.banner-title {
+  font-size: 90px;
+}
+
+.banner-content button {
+  text-decoration: none;
+  padding: 5px 60px;
+  background-color: white;
+  border: 1px solid black;
+  font-family: "Lato";
+  font-size: 22px;
+}
+
+.banner-image {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.banner-image img {
+  padding-left: 20px;
+}
+
+main {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.section-top {
+  margin: 35px auto;
+  display: inline-block;
+  width: 49.5%;
+  font-family: "Lato";
+}
+
+.section-bottom {
+  margin: 35px auto;
+  display: inline-block;
+  width: 33%;
+  font-family: "Lato";
+}
+
+.section-footer {
+  padding-top: 35px;
+}
+
+footer {
+  font-family: "Lato";
+  margin-top: 35px;
+  margin-bottom: 60px;
+  border-top: 1px solid black;
+}
+
+.phone {
+  padding: 25px 0;
+}
+
+.copyright {
+  text-align: center;
+  margin: 40px 0;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+a:hover {
+  animation: grow 0.5s ease-in;
+  border-bottom: 5px solid black;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 16px;
+  }
+  50% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+/* ---------- About page CSS ---------- */
+
+.banner-about-title {
+  font-size: 45px;
+  border-bottom: 3px solid black;
+}
+
+.banner-about-image {
+  width: 500px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.banner-about-image img {
+  width: 100%;
+}
+
+.banner-about-description {
+  line-height: 2em;
+}
